@@ -66,6 +66,64 @@ error_reporting(E_ALL ^ E_WARNING);
             })
         }
 
+        function UserStateDis() {
+            let timerInterval
+            Swal.fire({
+                title: '¡Error!',
+                icon: 'error',
+                text: 'Tu cuenta se encuentra desactivada.',
+                timer: 2000,
+                timerProgressBar: true,
+                allowOutsideClick: false,
+                allowEscapeKey: false,
+                allowEnterKey: false,
+                didOpen: () => {
+                    Swal.showLoading()
+                    const b = Swal.getHtmlContainer().querySelector('b')
+                    timerInterval = setInterval(() => {
+                        b.textContent = Swal.getTimerLeft()
+                    }, 100)
+                },
+                willClose: () => {
+                    clearInterval(timerInterval)
+                }
+            }).then((result) => {
+                /* Read more about handling dismissals below */
+                if (result.dismiss === Swal.DismissReason.timer) {
+                    window.location.href = "../login.php";
+                }
+            })
+        }
+
+        function LevelUnauthorized() {
+            let timerInterval
+            Swal.fire({
+                title: '¡Error!',
+                icon: 'error',
+                text: 'No tienes permisos para acceder a esta página.',
+                timer: 2000,
+                timerProgressBar: true,
+                allowOutsideClick: false,
+                allowEscapeKey: false,
+                allowEnterKey: false,
+                didOpen: () => {
+                    Swal.showLoading()
+                    const b = Swal.getHtmlContainer().querySelector('b')
+                    timerInterval = setInterval(() => {
+                        b.textContent = Swal.getTimerLeft()
+                    }, 100)
+                },
+                willClose: () => {
+                    clearInterval(timerInterval)
+                }
+            }).then((result) => {
+                /* Read more about handling dismissals below */
+                if (result.dismiss === Swal.DismissReason.timer) {
+                    window.location.href = "../login.php";
+                }
+            })
+        }
+
         // Función para mostrar un mensaje de error de inicio de sesión
         function MissingInfo() {
             let timerInterval
@@ -235,6 +293,10 @@ $correo = $_POST["txt_user"] ?? null;
 $pass = $_POST["txt_pass"] ?? null;
 
 
+/*if (!isset($_POST["txt_user"]) || !isset($_POST["txt_pass"])) {
+    echo '<script>MissingInfo();</script>';
+}*/
+
 // Creamos una instancia de la clase Model_Data que maneja la base de datos
 $data = new Data();
 
@@ -246,10 +308,9 @@ if ($correo && $pass) {
 
     if ($valid) {
         // Obtenemos los datos del usuario desde la base de datos
-        $userData = $data->getUserbyMail($correo)[0]; // Obtener el primer resultado
-        echo $userData;
+        $userData = $data->getUserbyMail($correo); // Obtener el primer resultado
 
-        if ($userData && $userData['estado'] === 0) {
+        if ($userData && $userData['estado'] === '0') {
             echo '<script>ErrorLog();</script>';
         } else {
             $_SESSION['id'] = $userData['id'];
@@ -266,10 +327,10 @@ if ($correo && $pass) {
 
             // Mostrar mensajes según el nivel del usuario
             echo match ($_SESSION['nivel']) {
-                1 => '<script>SuccessLogSupA();</script>',
-                2 => '<script>SuccessLogA();</script>',
-                3 => '<script>SuccessLogU();</script>',
-                4 => '<script>SuccessLogC();</script>',
+                '1' => '<script>SuccessLogSupA();</script>',
+                '2' => '<script>SuccessLogA();</script>',
+                '3' => '<script>SuccessLogU();</script>',
+                '4' => '<script>SuccessLogC();</script>',
                 default => '<script>ErrorLog();</script>',
             };
         }

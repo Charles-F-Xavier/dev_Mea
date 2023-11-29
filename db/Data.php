@@ -39,11 +39,11 @@ class Data
 
     public function isUserPassValid($correo, $pass): bool
     {
-        $sql = "SELECT COUNT(*) AS 'existe' FROM usuario WHERE correo = '$correo' AND clave = SHA2('$pass', 0);";
+        $sql = "SELECT COUNT(*) AS 'existe' FROM usuario WHERE correo = '$correo' AND clave = sha2('$pass',0);";
 
-        $result = $this->con->query($sql);
-
-        return ($result && $result->fetch_assoc()['existe'] > 0);
+        $query = $this->con->query($sql);
+        $row = $query->fetch_assoc();
+        return $row['existe'];
     }
 
     public function getUserbyMail($correo)
@@ -53,11 +53,12 @@ class Data
         $query = $this->con->query($sql);
 
         if ($query) {
-            $result = $query->fetch_assoc();
-            return $result;
+            return $query->fetch_assoc();
         } else {
+            // Hubo un error en la consulta, devuelve un mensaje de error
             return $this->con->error; // Retorna el mensaje de error de la conexión.
         }
     }
+
 
 }
