@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Me asesoro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Resources/Img/isotipos2-04.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100&display=swap"
+          rel="stylesheet">
+    <style>
+        .textMoc {
+            font-family: 'Bebas Neue', sans-serif;
+            filter: blur(0px);
+            margin-bottom: 0px;
+            letter-spacing: 10px;
+            font-size: 120px;
+            /* Puedes ajustar el tamaño según tus necesidades */
+        }
+
+        /* Estilos para pantallas pequeñas (teléfonos, menos de 576px) */
+        @media screen and (max-width: 575.98px) {
+            h1 {
+                font-size: 45px !important;
+                /* Puedes ajustar el tamaño según tus necesidades */
+                margin: 30% 0 5% 0 !important;
+                white-space: normal !important;
+                text-align: center !important;
+            }
+
+            .imgListMov {
+                width: 20% !important;
+            }
+
+            .textMoc {
+                font-size: 100%;
+                /* Puedes ajustar el tamaño según tus necesidades */
+                word-wrap: break-word !important;
+            }
+
+            #conWeb {
+                display: none !important;
+            }
+
+            #conMov {
+                display: block !important;
+            }
+
+            #footWeb {
+                display: none !important;
+            }
+
+            #footMov {
+                display: block !important;
+            }
+
+            #testWeb {
+                display: none !important;
+            }
+
+            #testMov {
+                display: block !important;
+            }
+
+            #planWeb {
+                display: none !important;
+            }
+
+            #planMov {
+                display: block !important;
+            }
+
+            .seccion-nosotros {
+                flex-direction: column !important;
+            }
+
+            .cuadro {
+                width: 100% !important;
+            }
+
+            .imagen {
+                width: 100% !important;
+            }
+        }
+
+        /* Estilos para pantallas medianas (tabletas, 577px - 767px) */
+        @media screen and (min-width: 576px) and (max-width: 767.98px) {
+            h1 {
+                font-size: 45px !important;
+                height: auto !important;
+                margin: 30% 0 5% 0 !important;
+                text-align: center !important;
+            }
+
+            .imgMov {
+                height: 75% !important;
+                width: 75% !important;
+            }
+
+            .imgListMov {
+                width: 20% !important;
+            }
+
+
+            .buttonMov {
+                margin: 35px !important;
+            }
+
+            #conWeb {
+                display: none !important;
+            }
+
+            #conMov {
+                display: block !important;
+            }
+
+            #footWeb {
+                display: none !important;
+            }
+
+            #footMov {
+                display: block !important;
+            }
+
+            #testWeb {
+                display: none !important;
+            }
+
+            #testMov {
+                display: block !important;
+            }
+
+            #planWeb {
+                display: none !important;
+            }
+
+            #planMov {
+                display: block !important;
+            }
+
+            .textMoc {
+                font-size: 120px;
+                /* Puedes ajustar el tamaño según tus necesidades */
+            }
+
+            .seccion-nosotros {
+                flex-direction: column !important;
+            }
+
+            .cuadro {
+                width: 100% !important;
+            }
+
+            .imagen {
+                width: 100% !important;
+            }
+        }
+
+        /* Estilos para pantallas grandes (computadoras portátiles, 768px - 991px) */
+        @media screen and (min-width: 768px) and (max-width: 991.98px) {
+            .textMoc {
+                font-size: 140px;
+                /* Puedes ajustar el tamaño según tus necesidades */
+            }
+
+            h1 {
+                font-size: 75px !important;
+                /* Puedes ajustar el tamaño según tus necesidades */
+                margin: 30% 0 5% 0 !important;
+                white-space: normal !important;
+                text-align: center !important;
+            }
+
+            .imgListMov {
+                width: 40% !important;
+            }
+
+            #footWeb > div > div > div {
+                margin-left: 10px !important;
+            }
+        }
+
+        /* Estilos para pantallas extra grandes (computadoras de escritorio, 992px o más) */
+        @media screen and (min-width: 992px) {
+            .textMoc {
+                font-size: 160px;
+                /* Puedes ajustar el tamaño según tus necesidades */
+            }
+        }
+    </style>
+</head>
+
+<body style="background: url('Resources/Img/fondoL.webp') top / cover no-repeat;">
+<nav class="navbar navbar-expand-lg bg-transparent">
+    <div class="container-fluid">
+        <a class="navbar-brand" style="
+            width: 300px;
+        " href="#"><img src="Resources/Img/isotipos-02.png" width="100%"></a>
+        <button class="navbar-toggler" style='color:white !important' type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-white"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link text-white active" href="#servicios"
+                                        style="font-family: Montserrat, sans-serif; font-size: 20px; font-weight: 900;">Servicio</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="#planes"
+                                        style="font-family: Montserrat, sans-serif; font-size: 20px;  font-weight: 900;">Planes</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="#"
+                                        style="font-family: Montserrat, sans-serif; font-size: 20px; font-weight: 900;">Nosotros</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="#"
+                                        style="font-family: Montserrat, sans-serif; font-size: 20px; font-weight: 900;">Contacto</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item mx-2">
+                    <button onclick="window.location.href='login.php'"
+                            class="btn btn-primary text-capitalize border rounded-pill" type="button"
+                            style="font-family: Montserrat, sans-serif; font-weight: 900; color: #000000; background: var(--bs-btn-disabled-color); font-size: 20px; margin-right: 2px; margin-top: 2px; border-style: solid; border-color: #0c0082; border-top-color: #0c0082; border-right-color: #0c0082; border-bottom-style: solid; border-bottom-color: var(--bs-btn-disabled-color); border-left-color: #0c0082; padding-bottom: 3px; padding-top: 3px; padding-right: 25px; padding-left: 25px;">
+                        Comenzar
+                    </button>
+                </li>
+                <li class="nav-item mx-2">
+                    <button onclick="location.href='login.php';"
+                            class="btn btn-primary text-capitalize border rounded-pill mx-2" type="button"
+                            style="white-space:nowrap;font-family: Montserrat, sans-serif; font-weight: 900; color: #000000; background: var(--bs-btn-disabled-color); font-size: 20px; margin-right: 2px; margin-top: 2px; border-style: solid; border-color: #0c0082; border-top-color: #0c0082; border-right-color: #0c0082; border-bottom-style: solid; border-bottom-color: var(--bs-btn-disabled-color); border-left-color: #0c0082; padding-bottom: 3px; padding-top: 3px; padding-left: 25px; padding-right: 25px;">
+                        Iniciar
+                        Sesión
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<header>
+    <div class="overlay"></div>
+    <div class="container-fluid" style="padding-right: 0px;padding-left: 0px;width: 100%;height: auto;">
+        <div class="row justify-content-center" style=" margin-top: 15%;
+            margin-left: 0px;
+            margin-right: 0px;
+        ">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <h1 class="text-center text-light textMoc display-1"
+                    style="font-family: 'Bebas Neue', sans-serif;filter: blur(0px);margin-bottom: 0px;">
+                    ASESORIAS <br> A TU ALCANCE
+                </h1>
+                <div class="row" style="margin-bottom: 100px;">
+                    <div class="col-sm-12 col-md-12 col-lg-12 mt-5 text-center">
+                        <button class="btn btn-primary buttonMov text-capitalize border rounded-pill"
+                                onclick="window.location.href='/login.php'" type="button"
+                                style="font-family: Montserrat, sans-serif;color: white;  font-weight: 900;background: #0c0082;font-size: 26px;border-style: solid;border-color: #0c0082;border-top-color: #0c0082;border-right-color: #0c0082;border-bottom-style: solid;border-bottom-color: #0c0082;border-left-color: #0c0082;margin-right: 2px;margin-top: 2px;padding-top: 5px;padding-bottom: 5px;padding-right: 75px;padding-left: 75px;">
+                            Comenzar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-10 col-lg-8">
+            <h1 class="text-center text-light textMoc"
+                style="font-family: 'Bebas Neue', sans-serif;font-size: 140px;filter: blur(0px);margin-bottom: 0px;">
+                TE BRINDAMOS
+                SERVICIOS ESTRATÉGICOS
+            </h1>
+        </div>
+    </div>
+    <div class="row text-center justify-content-center" style="margin-right: 0px;margin-left: 0px">
+        <div class="col-sm-12 col-md-10 col-lg-10">
+            <div class="row mb-5">
+                <div class="col-sm-12 col-md-3 col-lg-2 mx-auto">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0">
+                        <img class="rounded-circle img-fluid mb-3 imgMov"
+                             src="Resources/Img/vectores_Mesa%20de%20trabajo%201.png" style="height: 100%;width: 100%;">
+                        <h2 class="text-light">Asesoría<br>Financiera</h2>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-2 mx-auto">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img
+                            class="rounded-circle img-fluid mb-3 imgMov" src="Resources/Img/vectores-03.png"
+                            style="height: 100%;width: 100%;">
+                        <h2 class="text-light"><strong>Asesoría</strong><br><strong>Legal</strong></h2>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-2 mx-auto">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img
+                            class="rounded-circle img-fluid mb-3 imgMov" src="Resources/Img/vectores-02.png"
+                            style="height: 100%;width: 100%;">
+                        <h2 class="text-light"><strong>Asesoría</strong><br><strong>Contable</strong></h2>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-2 mx-auto">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img
+                            class="rounded-circle img-fluid mb-3 imgMov" src="Resources/Img/vectores-04.png"
+                            style="height: 100%;width: 100%;">
+                        <h2 class="text-nowrap text-light"><strong>Asesoría</strong><br><strong>en
+                            Marketing</strong></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-sm-12 col-md-12 col-lg-12 mx-auto">
+                    <button
+                            class="btn btn-primary text-capitalize border rounded-pill"
+                            onclick="window.location.href='/login.php'" type="button"
+                            style="font-family: Montserrat, sans-serif;  font-weight: 900;color: #000000;font-size: 32px;margin-right: 2px;margin-top: 2px;padding-right: 75px;padding-left: 75px;border-style: solid;border-color: #0c0082;border-top-color: #0c0082;border-right-color: #0c0082;border-bottom-style: solid;border-left-color: #0c0082;padding-bottom: 3px;padding-top: 3px;">
+                        Comenzar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid py-5">
+    <div class="row justify-content-center py-5">
+        <div class="col-sm-12 col-md-12 col-lg-6 text-center mb-5">
+            <h1 class=" text-uppercase text-light text-sm-center text-md-center text-lg-start"
+                style="font-family: 'Bebas Neue', sans-serif;font-size: 90px;">
+                Te apoyamos<br>para alcanzar tus<br>objetivos
+            </h1>
+            <button onclick="window.location.href='/login.php'"
+                    class="btn btn-light text-capitalize border rounded-pill fs-5 px-5 text-sm-center text-md-center text-lg-start"
+                    style="font-family: Montserrat, sans-serif; font-weight: 900;" type="button">Crear una
+                cuenta
+            </button>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-3">
+            <div class="row justify-content-center text-center align-items-center">
+                <div class="col-sm-4 col-md-4 col-lg-3 text-md-end">
+                    <img class="imgListMov" src="Resources/Img/vectores-05.png" width="100%"/>
+                </div>
+                <div class="col-sm-8 col-md-6 col-lg-8 my-3 text-md-start">
+                        <span class="text-light"
+                              style="font-size: 40px;font-weight: bold;height: 90px;margin-top: -15px;">
+                            Financieros
+                        </span>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center align-items-center">
+                <div class="col-sm-4 col-md-4 col-lg-3 text-md-end">
+                    <img class="imgListMov" src="Resources/Img/vectores-05.png" width="100%"/>
+                </div>
+                <div class="col-sm-8 col-md-6 col-lg-8 my-3 text-md-start">
+                        <span class="text-light"
+                              style="font-size: 40px;font-weight: bold;height: 90px;margin-top: -15px;">
+                            Contables
+                        </span>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center align-items-center">
+                <div class="col-sm-4 col-md-4 col-lg-3 text-md-end">
+                    <img class="imgListMov" src="Resources/Img/vectores-05.png" width="100%"/>
+                </div>
+                <div class="col-sm-8 col-md-6 col-lg-8 my-3 text-md-start">
+                        <span class="text-light"
+                              style="font-size: 40px;font-weight: bold;height: 90px;margin-top: -15px;">
+                            Ventas
+                        </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="servicios">
+    <div class="container py-5" id="conWeb">
+        <div class="row g-0 align-items-end justify-content-evenly">
+            <!-- Asesoría Financiera -->
+            <div class="col-sm-12 col-md-2 col-lg-2 text-white d-xl-flex justify-content-xl-start showcase-img"
+                 style="border-radius: 50%; border-top-left-radius: 50%; height: 240px; background: url('Resources/Img/carlos-muza-hpjSkU2UYSU-unsplash.jpg') center / cover space;">
+                <span></span>
+            </div>
+            <div class="col-lg-8 my-auto order-lg-1 showcase-text">
+                <h2 class="text-light my-2" style="font-family: 'Bebas Neue', sans-serif; font-size: 45px;">
+                    Asesoría<br>Financiera</h2>
+                <p class="lead text-light mb-0">Especializada en Pymes, te apoyamos para optimizar tus recursos,
+                    tomar decisiones informadas y velar por la estabilidad económica de tu negocio.</p>
+            </div>
+        </div>
+
+        <!-- Asesoría Legal -->
+        <div class="row g-0 align-items-end justify-content-evenly">
+            <div class="col-sm-12 col-md-2 col-lg-2 text-white order-lg-2 showcase-img"
+                 style="border-radius: 50%; height: 240px; background: url('Resources/Img/tingey-injury-law-firm-6sl88x150Xs-unsplash.jpg') center / cover no-repeat;">
+                <span></span>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-8 my-auto order-lg-1 showcase-text">
+                <h2 class="text-uppercase text-light my-2"
+                    style="font-family: 'Bebas Neue', sans-serif; font-size: 45px; text-align: right;">
+                    Asesoría<br>Legal</h2>
+                <p class="lead text-end text-light mb-0">Enfocada en proteger tu negocio, con nuestra asesoría legal
+                    especializada para pymes. Navega con confianza, cumpliendo normativas y mitigando riesgos.</p>
+            </div>
+        </div>
+
+        <!-- Asesoría Contable -->
+        <div class="row g-0 align-items-end justify-content-evenly">
+            <div class="col-sm-12 col-md-2 col-lg-2 text-white showcase-img"
+                 style="border-radius: 50%; height: 240px; background: url('Resources/Img/firmbee-com-dAmHWsRYP9c-unsplash.jpg') center / cover no-repeat;">
+                <span></span>
+            </div>
+            <div class="col-lg-8 my-auto order-lg-1 showcase-text">
+                <h2 class="text-light my-2" style="font-family: 'Bebas Neue', sans-serif; font-size: 45px;">
+                    Asesoría<br>Contable</h2>
+                <p class="lead text-light mb-0">Nuestra asesoría contable para pymes se encuentra enfocada en el
+                    cumplimiento tributario y la búsqueda del impulso necesario para el crecimiento de tu negocio.
+                </p>
+            </div>
+        </div>
+
+        <!-- Asesoría en Marketing -->
+        <div class="row g-0 align-items-end justify-content-evenly">
+            <div class="col-sm-12 col-md-2 col-lg-2 text-white order-lg-2 showcase-img"
+                 style="border-radius: 50%; height: 240px; background: url('Resources/Img/windows-w79mIrYKcK4-unsplash.jpg') center / cover no-repeat;">
+                <span></span>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-8 my-auto order-lg-1 showcase-text">
+                <h2 class="text-uppercase text-light my-2"
+                    style="font-family: 'Bebas Neue', sans-serif; font-size: 45px; text-align: right;">
+                    Asesoría<br>En Marketing</h2>
+                <p class="lead text-end text-light mb-0">Aumenta la visibilidad y atrae clientes con nuestra
+                    asesoría en marketing especializada para pymes. Desarrollamos estrategias efectivas para
+                    impulsar tu crecimiento.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="conMov" style="display: none;">
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Asesoría Financiera -->
+                        <div class="carousel-item active">
+                            <img src="Resources/Img/carlos-muza-hpjSkU2UYSU-unsplash.png"
+                                 class="d-block w-100 opacity-75" alt="...">
+                            <div class="carousel-caption d-block d-md-block text-start">
+                                <h2>Asesoría Financiera</h2>
+                                <p>Especializada en Pymes, te apoyamos para optimizar tus recursos, tomar decisiones
+                                    informadas y velar por la estabilidad económica de tu negocio.</p>
+                            </div>
+                        </div>
+                        <!-- Asesoría Legal -->
+                        <div class="carousel-item">
+                            <img src="Resources/Img/tingey-injury-law-firm-6sl88x150Xs-unsplash.jpg"
+                                 class="d-block w-100 opacity-75" alt="...">
+                            <div class="carousel-caption d-block d-md-block text-end">
+                                <h2>Asesoría Legal</h2>
+                                <p>Enfocada en proteger tu negocio, con nuestra asesoría legal especializada para
+                                    pymes. Navega con confianza, cumpliendo normativas y mitigando riesgos.</p>
+                            </div>
+                        </div>
+                        <!-- Asesoría Contable -->
+                        <div class="carousel-item">
+                            <img src="Resources/Img/firmbee-com-dAmHWsRYP9c-unsplash.jpg"
+                                 class="d-block w-100 opacity-75" alt="...">
+                            <div class="carousel-caption d-block d-md-block text-start">
+                                <h2>Asesoría Contable</h2>
+                                <p>Nuestra asesoría contable para pymes se encuentra enfocada en el cumplimiento
+                                    tributario y la búsqueda del impulso necesario para el crecimiento de tu
+                                    negocio.</p>
+                            </div>
+                        </div>
+                        <!-- Asesoría en Marketing -->
+                        <div class="carousel-item">
+                            <img src="Resources/Img/windows-w79mIrYKcK4-unsplash.jpg" class="d-block w-100 opacity-75"
+                                 alt="...">
+                            <div class="carousel-caption d-block d-md-block text-end">
+                                <h2>Asesoría en Marketing</h2>
+                                <p>Aumenta la visibilidad y atrae clientes con nuestra asesoría en marketing
+                                    especializada para pymes. Desarrollamos estrategias efectivas para impulsar tu
+                                    crecimiento.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container-fluid">
+    <style>
+        .seccion-nosotros {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .cuadro {
+            box-sizing: border-box;
+            width: 50%;
+            /* Ajusta el ancho según tus necesidades */
+            *margin: 10px;
+            *padding: 20px;
+            *border: 1px solid #ccc;
+        }
+
+        .text-nosotros {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 90px !important;
+            /* Puedes ajustar el tamaño según tus necesidades */
+            margin: 5% 10% 10% 10% !important;
+        }
+
+        .p-nosotros {
+            font-family: 'Montserrat', sans-serif;
+            /* Puedes ajustar el tamaño según tus necesidades */
+            margin: 5% 10% 10% 10% !important;
+            font-weight: bold !important;
+        }
+
+        .imagen {
+            width: 50%;
+        }
+    </style>
+    <div class="seccion-nosotros  my-5">
+        <div class="cuadro">
+            <h1 class="text-white text-nosotros">NOSOTROS</h1>
+            <h2 class="p-nosotros text-white">Empresa de prestación de servicios profesionales de alta calidad, con
+                el
+                compromiso de apoyar tanto a
+                individuos como a pymes, nacionales o internacionales, garantizando que cada decisión financiera y
+                administrativa se tome con confianza y precisión.</h2>
+        </div>
+
+        <div class="cuadro imagen">
+            <img src="Resources/Img/pexels-fauxels-3183183.jpg" alt="Imagen Nosotros" width="100%">
+        </div>
+
+        <div class="cuadro" style="background-color: #0c0082;">
+            <h1 class="text-white text-nosotros">MISIÓN</h1>
+            <h2 class="text-white p-nosotros">“A través de la conexión de datos e inteligencia compartida, proveemos
+                información a nuestros
+                clientes para la toma de decisiones más sabias que permiten crecer en conjunto, ahora y en el
+                futuro.”</h2>
+        </div>
+
+        <div class="cuadro" style="background-color: #fff;">
+            <h1 class="text-nosotros">VISIÓN</h1>
+            <h2 class="p-nosotros">“Nuestra visión es ser la plataforma líder para toma de decisiones.”
+            </h2>
+        </div>
+    </div>
+    s
+
+</div>
+<div class="container-fluid mt-5">
+    <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-10 col-lg-8">
+            <h1 class="text-center text-light textMoc"
+                style="font-family: 'Bebas Neue', sans-serif;font-size: 140px;filter: blur(0px);margin-bottom: 0px;">
+                Nuestros Valores
+            </h1>
+        </div>
+    </div>
+    <div class="row text-center justify-content-center my-5 py-5" style="margin-right: 0px;margin-left: 0px">
+        <div class="col-sm-12 col-md-10 col-lg-10">
+            <div class="row mb-5">
+                <div class="col-sm-12 col-md-3 col-lg-2 mx-auto">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0">
+                        <img class="rounded-circle img-fluid mb-3 imgListMov" src="Resources/Img/png-02.png"
+                             style="height: 100%;width: 100%;">
+                        <h2 class="text-light">Excelencia</h2>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-2 mx-auto">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img
+                            class="rounded-circle img-fluid mb-3 imgListMov" src="Resources/Img/png-03.png"
+                            style="height: 100%;width: 100%;">
+                        <h2 class="text-light">Profesionalismo</h2>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-2 mx-auto">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img
+                            class="rounded-circle img-fluid mb-3 imgListMov" src="Resources/Img/png-04.png"
+                            style="height: 100%;width: 100%;">
+                        <h2 class="text-light">Rigurosidad</h2>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-2 mx-auto">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img
+                            class="rounded-circle img-fluid mb-3 imgListMov"
+                            src="Resources/Img/png_Mesa de trabajo 1.png" style="height: 100%;width: 100%;">
+                        <h2 class="text-nowrap text-light">Trabajo en equipo</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 py-5">
+                <div class="col-sm-12 col-md-12 col-lg-12 mx-auto">
+                    <button
+                            class="btn btn-primary text-capitalize border rounded-pill"
+                            onclick="window.location.href='/login.php'" type="button"
+                            style="font-family: Montserrat, sans-serif;  font-weight: 900;color: #000000;background: var(--bs-btn-disabled-color);font-size: 32px;margin-right: 2px;margin-top: 2px;padding-right: 75px;padding-left: 75px;border-style: solid;border-color: #0c0082;border-top-color: #0c0082;border-right-color: #0c0082;border-bottom-style: solid;border-bottom-color: var(--bs-btn-disabled-color);border-left-color: #0c0082;padding-bottom: 3px;padding-top: 3px;">
+                        Comenzar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid ">
+    <div class="row">
+        <div class="col-sm-10 col-md-8 col-lg-8 col-xl-12 mx-auto position-relative col-lg-12"
+             style="padding: 0px;">
+            <h1 class="text-center textMoc text-light"
+                style="font-family: 'Bebas Neue', sans-serif;font-size: 140px;filter: blur(0px);margin-bottom: 10%;margin-top: 10%;">
+                TESTIMONIOS</h1>
+        </div>
+    </div>
+    <div class="row text-center justify-content-around" id="testWeb" style="margin-right: 0px;margin-left: 0px">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="row mb-5 mx-2">
+                <div class="col-sm-12 col-md-4 col-lg-4 my-3">
+                    <div class="card rounded-4">
+                        <div class="card-header"><img class="rounded-circle" src="Resources/Img/testimonials-1.jpg"
+                                                      width="35%">
+                            <h4>Lorem ipsum dolor<br>sit amet, consecte</h4>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                            <p class="card-text" style="margin-right: 0px;padding-left: 50px;padding-right: 50px;">
+                                Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
+                                dapibus ac
+                                facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
+                                metus.
+                            </p><a class="card-link" href="#">Link</a><a class="card-link" href="#">Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4  my-3">
+                    <div class="card rounded-4">
+                        <div class="card-header"><img class="rounded-circle" src="Resources/Img/testimonials-1.jpg"
+                                                      width="35%">
+                            <h4>Lorem ipsum dolor<br>sit amet, consecte</h4>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                            <p class="card-text" style="margin-right: 0px;padding-left: 50px;padding-right: 50px;">
+                                Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
+                                dapibus ac
+                                facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
+                                metus.
+                            </p><a class="card-link" href="#">Link</a><a class="card-link" href="#">Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4  my-3">
+                    <div class="card rounded-4">
+                        <div class="card-header"><img class="rounded-circle" src="Resources/Img/testimonials-1.jpg"
+                                                      width="35%">
+                            <h4>Lorem ipsum dolor<br>sit amet, consecte</h4>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                            <p class="card-text" style="margin-right: 0px;padding-left: 50px;padding-right: 50px;">
+                                Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
+                                dapibus ac
+                                facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
+                                metus.
+                            </p><a class="card-link" href="#">Link</a><a class="card-link" href="#">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row text-center justify-content-center" id="testMov"
+         style="margin-right: 0px; margin-left: 0px; display: none">
+        <div class="col-sm-10 col-md-10 col-lg-10 mx-auto">
+            <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="col-sm-12 col-md-4 col-lg-3 mx-auto">
+                            <div class="card rounded-4">
+                                <div class="card-header"><img class="rounded-circle"
+                                                              src="Resources/Img/testimonials-1.jpg" width="35%">
+                                    <h4>Lorem ipsum dolor<br>sit amet, consecte</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                                    <p class="card-text"
+                                       style="margin-right: 0px;padding-left: 50px;padding-right: 50px;">
+                                        Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
+                                        dapibus ac
+                                        facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
+                                        metus.
+                                    </p><a class="card-link" href="#">Link</a><a class="card-link" href="#">Link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-sm-12 col-md-4 col-lg-3 mx-auto">
+                            <div class="card rounded-4">
+                                <div class="card-header"><img class="rounded-circle"
+                                                              src="Resources/Img/testimonials-1.jpg" width="35%">
+                                    <h4>Lorem ipsum dolor<br>sit amet, consecte</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                                    <p class="card-text"
+                                       style="margin-right: 0px;padding-left: 50px;padding-right: 50px;">
+                                        Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
+                                        dapibus ac
+                                        facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
+                                        metus.
+                                    </p><a class="card-link" href="#">Link</a><a class="card-link" href="#">Link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-sm-12 col-md-4 col-lg-3 mx-auto">
+                            <div class="card rounded-4">
+                                <div class="card-header"><img class="rounded-circle"
+                                                              src="Resources/Img/testimonials-1.jpg" width="35%">
+                                    <h4>Lorem ipsum dolor<br>sit amet, consecte</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                                    <p class="card-text"
+                                       style="margin-right: 0px;padding-left: 50px;padding-right: 50px;">
+                                        Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
+                                        dapibus ac
+                                        facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
+                                        metus.
+                                    </p><a class="card-link" href="#">Link</a><a class="card-link" href="#">Link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" id="planes">
+    <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-10 col-lg-8 col-xl-12  col-lg-12">
+            <h1 class="text-center text-light"
+                style="font-family: 'Bebas Neue', sans-serif;font-size: 140px;filter: blur(0px);margin-bottom: 10%;margin-top: 10%;">
+                PLANES</h1>
+        </div>
+    </div>
+    <div class="row text-center justify-content-center" id="planWeb" style="margin-right: 0px;margin-left: 0px">
+        <div class="col-sm-12 col-md-12 col-lg-12 mx-5">
+            <div class="row mb-5">
+                <div class="col-sm-12 col-md-4 col-lg-3 mx-auto">
+                    <div class="card"
+                         style="border-radius: 0%;height: 1000px;border-top-left-radius: 15px;border-top-right-radius: 15px;border-bottom-right-radius: 75px;">
+                        <div class="card-header">
+                            <h4>Lorem ipsum dolor<br>sit amet, consecte</h4>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                            <p class="card-text" style="margin-right: 0px;padding-left: 50px;padding-right: 50px;">
+                                Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac
+                                facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.
+                            </p><a class="card-link" href="#">Link</a><a class="card-link" href="#">Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 mx-auto">
+                    <div class="card"
+                         style="border-radius: 0%;height: 1000px;border-top-left-radius: 15px;border-top-right-radius: 15px;border-bottom-right-radius: 75px;">
+                        <div class="card-header">
+                            <h4>Lorem ipsum dolor<br>sit amet, consecte</h4>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                            <p class="card-text" style="margin-right: 0px;padding-left: 50px;padding-right: 50px;">
+                                Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac
+                                facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.
+                            </p><a class="card-link" href="#">Link</a><a class="card-link" href="#">Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 mx-auto">
+                    <div class="card"
+                         style="border-radius: 0%;height: 1000px;border-top-left-radius: 15px;border-top-right-radius: 15px;border-bottom-right-radius: 75px;">
+                        <div class="card-header">
+                            <h4>Lorem ipsum dolor<br>sit amet, consecte</h4>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                            <p class="card-text" style="margin-right: 0px;padding-left: 50px;padding-right: 50px;">
+                                Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac
+                                facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.
+                            </p><a class="card-link" href="#">Link</a><a class="card-link" href="#">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row text-center justify-content-center" id="planMov"
+         style="margin-right: 0px; margin-left: 0px; display: none">
+        <div class="col-sm-10 col-md-10 col-lg-10 mx-auto">
+            <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="col-sm-12 col-md-4 col-lg-3 mx-auto">
+                            <div class="card"
+                                 style="border-radius: 0%;height: 1000px;border-top-left-radius: 15px;border-top-right-radius: 15px;border-bottom-right-radius: 75px;">
+                                <div class="card-header">
+                                    <h4>Plan Basico</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                                    <p class="card-text"
+                                       style="margin-right: 0px;padding-left: 50px;padding-right: 50px;">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id
+                                        nibh
+                                        ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in,
+                                        egestas
+                                        eget quam. Donec id elit non mi porta gravida at eget metus.
+                                    </p>
+                                    <a class="card-link" href="#">Link</a>
+                                    <a class="card-link" href="#">Link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-sm-12 col-md-4 col-lg-3 mx-auto">
+                            <div class="card"
+                                 style="border-radius: 0%;height: 1000px;border-top-left-radius: 15px;border-top-right-radius: 15px;border-bottom-right-radius: 75px;">
+                                <div class="card-header">
+                                    <h4>Asesoría Legal</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                                    <p class="card-text"
+                                       style="margin-right: 0px;padding-left: 50px;padding-right: 50px;">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id
+                                        nibh
+                                        ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in,
+                                        egestas
+                                        eget quam. Donec id elit non mi porta gravida at eget metus.
+                                    </p>
+                                    <a class="card-link" href="#">Link</a>
+                                    <a class="card-link" href="#">Link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-sm-12 col-md-4 col-lg-3 mx-auto">
+                            <div class="card"
+                                 style="border-radius: 0%;height: 1000px;border-top-left-radius: 15px;border-top-right-radius: 15px;border-bottom-right-radius: 75px;">
+                                <div class="card-header">
+                                    <h4>Asesoría en Marketing</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                                    <p class="card-text"
+                                       style="margin-right: 0px;padding-left: 50px;padding-right: 50px;">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id
+                                        nibh
+                                        ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in,
+                                        egestas
+                                        eget quam. Donec id elit non mi porta gravida at eget metus.
+                                    </p>
+                                    <a class="card-link" href="#">Link</a>
+                                    <a class="card-link" href="#">Link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="contacto" class="my-5 pt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <h1 class="text-center text-light"
+                    style="font-family: 'Bebas Neue', sans-serif;font-size: 140px;filter: blur(0px);margin-bottom: 0%;margin-top: 10%;">
+                    CONTACTANOS</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="form-floating my-3">
+                    <input type="text" class="form-control" id="inputName" placeholder="name@example.com">
+                    <label for="inputName">Nombre</label>
+                </div>
+                <div class="form-floating my-3">
+                    <input type="number" class="form-control" id="inputPhone" placeholder="name@example.com">
+                    <label for="inputPhone">Telefono</label>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="form-floating my-3">
+                    <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com">
+                    <label for="inputEmail">Email</label>
+                </div>
+                <div class="form-floating my-3">
+                    <input type="text" class="form-control" id="inputEnterprise" placeholder="name@example.com">
+                    <label for="inputEnterprise">Empresa</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="form-floating my-3">
+                    <input type="text" class="form-control" id="inputService" placeholder="name@example.com">
+                    <label for="inputService">Servicio</label>
+                </div>
+                <div class="form-floating my-3">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="inputMessage"
+                                  style="height: 100px"></textarea>
+                    <label for="inputMessage">Mensaje</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                <button type="button" class="btn btn-primary">Enviar</button>
+            </div>
+        </div>
+    </div>
+</section>
+<footer style="background: #000022;" id="footWeb">
+    <div class="container-fluid py-4 py-lg-5">
+        <div class="row justify-content-start">
+            <div class="col-sm-4 col-md-3 col-lg-4 text-start text-lg-start d-flex flex-column justify-content-xl-center item"
+                 style="margin-right: 15px;margin-left: 200px;"><img src="Resources/Img/isotipos-02.png" width="100%">
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-3 text-center text-lg-start d-flex flex-column item mx-2"
+                 style="border-left: 2px solid var(--bs-body-bg);margin-left: 0px;">
+                <ul class="list-unstyled text-start"
+                    style="margin-left: 50px;padding-bottom: 0px;margin-bottom: 0px;">
+                    <li class="d-xxl-flex justify-content-xxl-start my-3"><a class="link-light"
+                                                                             href="#servicios">Servicios</a></li>
+                    <li class="d-xxl-flex justify-content-xxl-start my-3"><a class="link-light"
+                                                                             href="#planes">Planes</a>
+                    </li>
+                    <li class="d-xxl-flex justify-content-xxl-start my-3"><a class="link-light"
+                                                                             href="#">Nosotros&nbsp;</a></li>
+                    <li class="d-xxl-flex justify-content-xxl-start my-3"><a class="link-light"
+                                                                             href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-2 text-end text-lg-start d-flex flex-column item">
+                <ul class="list-unstyled text-end my-auto">
+                    <li><a class="link-light" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                             height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook fs-2"
+                             style="margin-top: 10px;margin-bottom: 10px;">
+                            <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                            </path>
+                        </svg>
+                    </a></li>
+                    <li><a class="link-light" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                             height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-twitter fs-2"
+                             style="margin-top: 10px;margin-bottom: 10px;">
+                            <path
+                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z">
+                            </path>
+                        </svg>
+                    </a></li>
+                    <li><a class="link-light" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                             height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram fs-2"
+                             style="margin-top: 10px;margin-bottom: 10px;">
+                            <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                            </path>
+                        </svg>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<footer style="background: #000022; display: none;" id="footMov">
+    <div class="container-fluid py-4 py-lg-5">
+        <div class="row">
+            <div
+                    class="col-sm-12 col-md-3 col-lg-4 text-start text-lg-start d-flex flex-column justify-content-xl-center item">
+                <img src="Resources/Img/isotipos-02.png" width="100%">
+            </div>
+            <div class="col-sm-12 col-md-9 col-lg-8">
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <ul class="list-unstyled">
+                            <li class="my-3"><a class="link-light" href="#servicios">Servicios</a></li>
+                            <li class="my-3"><a class="link-light" href="#planes">Planes</a></li>
+                            <li class="my-3"><a class="link-light" href="#">Nosotros&nbsp;</a></li>
+                            <li class="my-3"><a class="link-light" href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 text-center text-md-end">
+                        <ul class="list-unstyled my-auto">
+                            <li><a class="link-light" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                                     height="1em" fill="currentColor" viewBox="0 0 16 16"
+                                     class="bi bi-facebook fs-2" style="margin-top: 10px;margin-bottom: 10px;">
+                                    <path
+                                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                    </path>
+                                </svg>
+                            </a></li>
+                            <li><a class="link-light" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                                     height="1em" fill="currentColor" viewBox="0 0 16 16"
+                                     class="bi bi-twitter fs-2" style="margin-top: 10px;margin-bottom: 10px;">
+                                    <path
+                                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z">
+                                    </path>
+                                </svg>
+                            </a></li>
+                            <li><a class="link-light" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                                     height="1em" fill="currentColor" viewBox="0 0 16 16"
+                                     class="bi bi-instagram fs-2" style="margin-top: 10px;margin-bottom: 10px;">
+                                    <path
+                                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s.444-.01.298-.048c.78-.036 1.203-.166 1.485-.276a2.47 2.47 0 0 1 .599-.92c.28-.28.453-.546.598-.92.11-.281.24-.705.275-1.485.039-.843.047-1.096.047-3.233s-.008-2.389-.047-3.232c-.035-.78-.166-1.203-.275-1.485a2.47 2.47 0 0 1-.599-.92c-.28-.28-.546-.453-.92-.598-.28-.11-.704-.24-1.485-.276-.843-.038-1.096-.047-3.232-.047s-2.39.008-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.47 2.47 0 0 1-.599-.92c-.28-.28-.546-.453-.92-.598-.28-.11-.705-.24-1.485-.276-.738-.034-1.024-.044-2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                                    </path>
+                                </svg>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>
